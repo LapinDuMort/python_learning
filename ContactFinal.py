@@ -42,7 +42,7 @@ def read():
                 print(row) 
 
     if inputtype == "name":
-        custnameread = input("To read a customer file please enter the customer's name or type [*] to view all: ")
+        custnameread = input("To read contact info please enter the contact's name or type [*] to view all: ")
         custnameread = custnameread.title().strip()
         if custnameread == "*":
             select_cursor = db.cursor()
@@ -58,7 +58,7 @@ def read():
                 customerchoice()
 
     if inputtype == "phone":
-        custnumread = input("To read a customer file please enter the customer's phone number or type [*] to view all: ")
+        custnumread = input("To read a contact's info please enter the contact''s phone number or type [*] to view all: ")
         custnumread = custnumread.strip()
         if custnumread == "*":
             select_cursor = db.cursor()
@@ -74,7 +74,7 @@ def read():
                 customerchoice()
         
     if inputtype == "email":
-            custemailread = input("To read a customer file please enter the customer's phone number or type [*] to view all: ")
+            custemailread = input("To read a contact's file please enter the contact's email or type [*] to view all: ")
             custemailread = custemailread.lower().strip()
             if custemailread == "*":
                 select_cursor = db.cursor()
